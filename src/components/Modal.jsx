@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 
 export const Modal = ({ isOpen, onClose, title, children, size = 'md' }) => {
   const overlayRef = useRef(null);
@@ -44,7 +45,7 @@ export const Modal = ({ isOpen, onClose, title, children, size = 'md' }) => {
 
   const sizeClasses = { sm: 'max-w-sm', md: 'max-w-lg', lg: 'max-w-2xl' };
 
-  return (
+  return createPortal(
     <div 
       ref={overlayRef} 
       className="fixed inset-0 z-50 flex h-[100dvh] items-end justify-center p-2 sm:items-center sm:p-4" 
@@ -78,6 +79,7 @@ export const Modal = ({ isOpen, onClose, title, children, size = 'md' }) => {
           {children}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
