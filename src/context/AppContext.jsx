@@ -98,6 +98,7 @@ export const AppProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(isFirebaseConfigured);
   const [hydratedUid, setHydratedUid] = useState(null);
   const toastTimers = useRef(new Map());
+  const isSigningUp = useRef(false);
 
   const currentPage = useMemo(() => PATH_TO_PAGE[location.pathname] || 'dashboard', [location.pathname]);
 
@@ -125,6 +126,10 @@ export const AppProvider = ({ children }) => {
           setHydratedUid(null);
           setIsLoading(false);
           return;
+        }
+
+        if (isSigningUp.current) {
+          return; // Let the signup function handle the initial profile creation and state setting
         }
 
         try {
@@ -230,6 +235,7 @@ export const AppProvider = ({ children }) => {
       }
 
       try {
+        isSigningUp.current = true;
         const cred = await signupWithEmail(email, password);
         const newUser = {
           id: cred.user.uid,
@@ -273,6 +279,8 @@ export const AppProvider = ({ children }) => {
       } catch (error) {
         showToast(getAuthErrorMessage(error, 'Signup failed. Please try again.'), 'error');
         return false;
+      } finally {
+        isSigningUp.current = false;
       }
     },
     [routerNavigate, showToast],
