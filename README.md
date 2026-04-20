@@ -8,6 +8,7 @@ Built as part of the **End-Term Project – Building Web Applications with React
 
 # 🚀 Live Demo
 **📼 Demo Video :** https://drive.google.com/file/d/1pXjRf6lKNz9yJqR2EsKcHIA7tA4rS_g-/view?usp=sharing
+
 **🔗 Live App:** wandr-kdrx1jj1p-eshikakarssts-projects.vercel.app
 
 📂 GitHub Repo: https://github.com/eshikakarsst/wandr
