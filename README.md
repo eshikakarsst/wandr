@@ -8,7 +8,7 @@ Built as part of the **End-Term Project – Building Web Applications with React
 
 # 🚀 Live Demo
 
-🔗 Live App:wandr-azure.vercel.app
+**🔗 Live App:**wandr-kdrx1jj1p-eshikakarssts-projects.vercel.app
 
 📂 GitHub Repo: https://github.com/eshikakarsst/wandr
 ---
