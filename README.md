@@ -1,213 +1,320 @@
-🌍 Smart Travel Planner
+# 🌍 Smart Travel Planner
 
-A full-stack React + Firebase web application that helps users plan trips intelligently based on budget, destinations, itinerary, and document tracking — all in one place.
+A **full-stack React + Firebase web application** that helps users plan trips intelligently by managing **budget, itinerary, and travel documents** in one centralized platform.
 
-Built as part of the End-Term Project – Building Web Applications with React (Batch 2029)
+Built as part of the **End-Term Project – Building Web Applications with React (Batch 2029)**.
 
-🎯 Problem Statement
+---
 
-Planning trips manually is difficult because travelers often:
+# 🚀 Live Demo
 
-lose track of budgets 💸
-forget required travel documents 📄
-struggle organizing itineraries 🗺️
-switch between multiple apps to manage everything
-👤 Target Users
-Students planning trips
-Solo travelers
-Families organizing vacations
-Anyone needing structured trip planning
-✅ Solution
+🔗 Live App: wandr-oetmb4mrw-eshikakarssts-projects.vercel.app
+📂 GitHub Repo: https://github.com/eshikakarsst/wandr
+---
 
-Smart Travel Planner provides a centralized platform where users can:
+# 🧠 Problem Statement
 
-create trips
-manage travel budgets
-organize itineraries
-track required documents
-store trip data securely
+Travel planning today is scattered across multiple platforms. Travelers typically:
 
-This reduces planning stress and improves travel preparation efficiency.
+* lose track of travel budgets 💸
+* forget required travel documents 📄
+* struggle organizing itineraries 🗺️
+* switch between multiple apps for planning
 
-🚀 Features
-🔐 Authentication System
-User Signup/Login
-Firebase Authentication
-Persistent sessions
-Protected routes
-📊 Dashboard
+This creates confusion, inefficiency, and unnecessary stress.
 
-After login, users see:
+The **Smart Travel Planner** solves this by providing a **single centralized platform** where users can:
 
-all created trips
-quick overview of budgets
-upcoming travel plans
-navigation to planner tools
-🧳 Trip Management (CRUD)
+* manage trip budgets
+* organize itineraries
+* track required travel documents
+* store trip details securely
 
-Users can:
+all inside one application.
 
-Create new trips
-View trip details
-Update trip information
-Delete trips
+---
 
-Stored using Firebase Firestore
+# 👥 Target Users
 
-💰 Budget Planner
+This application is designed for:
 
-Users can:
+* students planning trips
+* solo travelers
+* families planning vacations
+* frequent travelers managing multiple trips
 
-set total trip budget
-track expenses
-monitor remaining balance
+Anyone who wants a structured and stress‑free travel planning experience.
 
-Helps avoid overspending.
+---
 
-🗓️ Itinerary Planner
+# ❗ Why This Problem Matters
 
-Users can:
+Travel planning is often chaotic because information is spread across different tools. A centralized solution:
 
-add daily plans
-organize activities
-manage schedules
+* saves time
+* reduces planning errors
+* improves travel preparedness
+* creates a smoother travel experience
 
-Ensures structured trip flow.
+This project demonstrates how modern web technologies can simplify real-world planning workflows.
 
-📄 Document Checklist
+---
 
-Users can track:
+# ✨ Core Features
 
-Passport
-Visa
-Tickets
-Hotel bookings
-Custom documents
+## 🔐 Authentication System
 
-Prevents missing important paperwork.
+* User Signup
+* User Login
+* Logout functionality
+* Protected routes
+* Persistent sessions using Firebase Auth
 
-🧠 React Concepts Used
-Core Concepts ✅
-Functional Components
-Props
-useState
-useEffect
-Conditional Rendering
-Lists & Keys
-Intermediate Concepts ✅
-Lifting State Up
-Controlled Components
-React Router
-Context API (Global State)
-Advanced Concepts ✅
-useMemo (performance optimization)
-useCallback
-useRef
-Lazy Loading using React.lazy + Suspense
-🔥 Tech Stack
-Frontend
-React (Vite)
-React Router
-Context API
-Tailwind CSS
-Backend
-Firebase Authentication
-Firebase Firestore Database
-Deployment
-Vercel / Netlify
-📁 Project Structure
+## 📊 Dashboard
+
+* Overview of all trips
+* Quick navigation to itinerary, budget, and documents
+* Personalized trip management interface
+
+## 💸 Budget Planner
+
+* Add expenses
+* Track total spending
+* Categorize expenses
+* Update/Delete expenses
+* Monitor remaining budget
+
+## 🗺️ Itinerary Manager
+
+* Add travel activities
+* Organize trip schedule by day
+* Update/Delete itinerary items
+
+## 📄 Document Tracker
+
+* Track required travel documents
+* Mark documents as completed
+* Update/Delete document entries
+
+## ☁️ Cloud Storage
+
+All user data is securely stored using **Firebase Firestore**.
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+* React (Functional Components)
+* React Router
+* Context API (Global State)
+* Tailwind CSS
+
+## Backend (BaaS)
+
+* Firebase Authentication
+* Firebase Firestore Database
+
+## Performance Optimization
+
+* useMemo
+* useCallback
+* Lazy Loading (React.lazy + Suspense)
+
+---
+
+# ⚛️ React Concepts Used
+
+## Core Concepts
+
+* Functional Components
+* Props & Component Composition
+* useState
+* useEffect
+* Conditional Rendering
+* Lists & Keys
+
+## Intermediate Concepts
+
+* Lifting State Up
+* Controlled Components
+* React Router
+* Context API
+
+## Advanced Concepts
+
+* useMemo
+* useCallback
+* useRef
+* Lazy Loading
+* Component Optimization
+
+---
+
+# 📂 Folder Structure
+
+```
 src/
-│
-├── components/
-├── pages/
-├── hooks/
-├── context/
-├── services/
-├── utils/
-└── App.jsx
-⚙️ Installation & Setup
-Step 1: Clone Repository
+ ┣ components/
+ ┣ pages/
+ ┣ hooks/
+ ┣ context/
+ ┣ services/
+ ┣ utils/
+ ┗ App.jsx
+```
+
+This structure ensures:
+
+* scalability
+* clean separation of concerns
+* reusable components
+
+---
+
+# 🔐 Backend Integration
+
+Firebase is used for:
+
+* Authentication
+* Firestore database
+* Persistent user data storage
+* CRUD operations
+
+---
+
+# 📦 CRUD Operations Implemented
+
+Users can:
+
+* Create trips
+* Read trip details
+* Update itinerary & budgets
+* Delete trips/documents/expenses
+
+All changes sync in real-time using Firestore.
+
+---
+
+# 🎨 UI/UX Features
+
+* Fully responsive design
+* Mobile-friendly layout
+* Clean navigation structure
+* Loading indicators
+* Error handling messages
+* Consistent component styling
+
+---
+
+# 🧪 Installation & Setup Guide
+
+Follow these steps to run the project locally.
+
+## Step 1: Clone Repository
+
+```
 git clone https://github.com/yourusername/smart-travel-planner.git
-Step 2: Navigate to Project
+```
+
+## Step 2: Navigate Into Folder
+
+```
 cd smart-travel-planner
-Step 3: Install Dependencies
+```
+
+## Step 3: Install Dependencies
+
+```
 npm install
-Step 4: Setup Environment Variables
+```
 
-Create .env file:
+## Step 4: Setup Environment Variables
 
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+Create a `.env` file in the root directory and add:
+
+```
+VITE_FIREBASE_API_KEY=your_key
+VITE_FIREBASE_AUTH_DOMAIN=your_domain
 VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_STORAGE_BUCKET=your_bucket
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
-Step 5: Run Project
+```
+
+## Step 5: Run Development Server
+
+```
 npm run dev
-🔐 Firebase Features Used
-Authentication (Signup/Login)
-Firestore Database
-Protected Routes
-Persistent User Data Storage
-CRUD Operations
-📊 Application Workflow
-User Signup/Login
-        ↓
-Dashboard
-        ↓
-Create Trip
-        ↓
-Add Budget + Itinerary + Documents
-        ↓
-Data stored in Firestore
-🎨 UI/UX Features
-Responsive Design (Mobile + Desktop)
-Clean layout using Tailwind CSS
-Loading indicators
-Error handling messages
-Protected navigation routes
-🌐 Live Demo
-https://end-term-project-term-3.vercel.app/
-🎥 Demo Video
+```
 
-Explain in video:
+---
 
-Problem Statement
-Features walkthrough
-React architecture
-Firebase integration
+# 🌐 Deployment
 
-Duration: 3–5 minutes
+Recommended platforms:
 
-📈 Evaluation Criteria Coverage
+* Vercel
+* Netlify
+
+Steps:
+
+```
+npm run build
+```
+
+Deploy `/dist` folder.
+
+---
+
+# 🎥 Demo Video (Submission Requirement)
+
+The demo video explains:
+
+* Problem Statement
+* Key Features
+* Tech Stack
+* Architecture decisions
+
+Video Duration: **3–5 minutes**
+
+---
+
+# 📊 Evaluation Criteria Coverage
 
 This project demonstrates:
 
-✅ React Fundamentals
-✅ Advanced Hooks Usage
-✅ Backend Integration
-✅ Authentication System
-✅ CRUD Operations
-✅ Clean UI/UX
-✅ Real-world problem solving
+✅ Strong React fundamentals
+✅ Advanced hooks usage
+✅ Firebase backend integration
+✅ Authentication system
+✅ CRUD operations
+✅ Responsive UI/UX
+✅ Clean architecture
 
-🧑‍💻 Author
+---
 
-Eshika Kar
-Batch 2029
-Course: Building Web Applications with React
+# 🚀 Future Improvements
 
-⭐ Future Improvements
+Planned enhancements:
 
-Planned upgrades:
+* AI-based trip suggestions
+* Travel checklist reminders
+* Expense analytics dashboard
+* Export trip summary as PDF
 
-AI travel suggestions
-Expense analytics charts
-Group trip collaboration
-Google Maps integration
-Export itinerary as PDF
+---
 
+# 👩‍💻 Author
 
-📄 License
-This project is created for educational purposes as part of a course end-term project.
+**Eshika Kar**
+Batch 2029 – React Web Applications
 
+---
+
+# ⭐ Final Note
+
+This project demonstrates how a real-world planning workflow can be simplified using modern React architecture and Firebase backend services.
+
+It is designed as both an **academic submission** and a **portfolio-ready production-style application**.
